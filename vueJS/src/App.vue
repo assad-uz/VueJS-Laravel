@@ -1,85 +1,35 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <header class="app-header">
+    <div class="header-content">
+      <span class="app-title">Vue App</span> 
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
+      <nav class="main-nav">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/contact">Contact Us</RouterLink>
+        <RouterLink to="/products">Products</RouterLink>
       </nav>
     </div>
   </header>
 
-  <RouterView />
+  <RouterView class="page-content" /> 
 </template>
 
 <style scoped>
+/* সব ডিফল্ট স্টাইল এবং media query মুছে ফেলার পর, শুধু এই স্টাইলগুলো রাখুন */
 header {
   line-height: 1.5;
-  max-height: 100vh;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
+/* নেভিগেশন লিঙ্কগুলোকে পাশাপাশি আনার জন্য (যা App.vue এর default style এ আছে) */
 nav a {
   display: inline-block;
   padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
 }
 
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
+/* 1024px এর বেশি হলেও যেন পাশাপাশি না আসে, তার জন্য কোনো flex কোড রাখবেন না। */
 </style>
