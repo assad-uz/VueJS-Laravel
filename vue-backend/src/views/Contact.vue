@@ -6,7 +6,7 @@
         <h3 class="h5">Contact Us</h3>
         <ul class="list-unstyled">
           <li><strong>Address:</strong> Dhaka, Bangladesh</li>
-          <li><strong>Email:</strong> info@myapp.com</li>
+          <li><strong>Email:</strong> info@assad.com</li>
           <li><strong>Phone:</strong> +880 XXXX XXX XXX</li>
         </ul>
       </div>
