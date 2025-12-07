@@ -1,6 +1,8 @@
 <template>
-  <header class="main-header">
-    <h1>My Vue App</h1>
+  <header class="bg-success text-white p-3 shadow">
+    <div class="container-fluid">
+      <h1 class="h3 mb-0">My Vue App</h1>
+    </div>
   </header>
 </template>
 
@@ -11,15 +13,5 @@ export default {
 </script>
 
 <style scoped>
-.main-header {
-  background-color: #42b883; 
-  color: white;
-  padding: 1rem 2rem;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-h1 {
-  margin: 0;
-  font-size: 1.8rem;
-}
+
 </style>

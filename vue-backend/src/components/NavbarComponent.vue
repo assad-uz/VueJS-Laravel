@@ -1,12 +1,38 @@
 <template>
-  <nav class="main-nav">
-    <ul>
-      <li><router-link to="/">Home</router-link></li>
-      <li><router-link to="/products">Products</router-link></li>
-      <li><router-link to="/services">Services</router-link></li>
-      <li><router-link to="/about">About Us</router-link></li>
-      <li><router-link to="/contact">Contact</router-link></li>
-    </ul>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm">
+    <div class="container-fluid">
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <router-link class="nav-link" to="/">Home</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/products">Products</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/services">Services</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/about">About Us</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/contact">Contact</router-link>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 </template>
 
@@ -17,30 +43,8 @@ export default {
 </script>
 
 <style scoped>
-.main-nav {
-  background-color: #35495e;
-  padding: 0.5rem 2rem;
-}
-.main-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-.main-nav li {
-  margin: 0 15px;
-}
-.main-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  display: block;
-  transition: background-color 0.3s;
-}
-.main-nav a:hover,
-.main-nav a.router-link-active {
-  background-color: #42b883;
-  border-radius: 4px;
+/* 'router-link-active' ক্লাসটি Bootstrap নেভিগেশনের সাথে কাজ করার জন্য প্রয়োজন হতে পারে */
+.nav-link.router-link-active {
+  color: #42b883 !important;
 }
 </style>

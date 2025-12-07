@@ -1,6 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+import 'bootstrap/dist/css/bootstrap.css'
+// Bootstrap JS (Popper.js)
+import 'bootstrap/dist/js/bootstrap.bundle.min'
 
 const app = createApp(App)
 

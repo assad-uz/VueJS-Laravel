@@ -1,6 +1,8 @@
 <template>
-  <footer class="main-footer">
-    <p>&copy; 2025 My View App | All Rights Reserved</p>
+  <footer class="bg-dark text-white text-center py-3 fixed-bottom">
+    <div class="container-fluid">
+      <p class="mb-0">&copy; 2025 My View App | All Rights Reserved</p>
+    </div>
   </footer>
 </template>
 
@@ -11,16 +13,5 @@ export default {
 </script>
 
 <style scoped>
-.main-footer {
-  background-color: #333;
-  color: white;
-  padding: 1rem 2rem;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-p {
-  margin: 0;
-}
+
 </style>
