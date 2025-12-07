@@ -1,25 +1,38 @@
-// src/router/index.js
 
 import { createRouter, createWebHistory } from 'vue-router'
-import MainLayout from '@/components/MainLayout.vue' // MainLayout ইম্পোর্ট করুন
-import Home from '@/views/Home.vue' // আপনার পেজ কম্পোনেন্টগুলো
+import MainLayout from '@/components/MainLayout.vue'
+import Home from '@/views/Home.vue' 
 
 const routes = [
   {
     path: '/',
-    component: MainLayout, // সব রুট MainLayout ব্যবহার করবে
+    component: MainLayout,
     children: [
       {
-        path: '', // '/' রুট হলে Home কম্পোনেন্ট লোড হবে
+        path: '', // Home Page এর জন্য রুট পাথ
         name: 'Home',
         component: Home
       },
       {
-        path: 'products',
+        path: 'products', 
         name: 'Products',
         component: () => import('@/views/Products.vue')
       },
-      // অন্যান্য রুট...
+      {
+        path: 'services',
+        name: 'Services',
+        component: () => import('@/views/Services.vue')
+      },
+      {
+        path: 'about',
+        name: 'About',
+        component: () => import('@/views/About.vue')
+      },
+      {
+        path: 'contact',
+        name: 'Contact',
+        component: () => import('@/views/Contact.vue')
+      }
     ]
   }
 ]
