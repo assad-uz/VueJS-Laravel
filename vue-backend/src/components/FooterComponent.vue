@@ -1,6 +1,6 @@
 <template>
   <footer class="main-footer">
-    <p>&copy; 2025 আমার ভিউ অ্যাপ | সর্বস্বত্ব সংরক্ষিত</p>
+    <p>&copy; 2025 My View App | All Rights Reserved</p>
   </footer>
 </template>
 
