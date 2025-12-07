@@ -3,8 +3,10 @@
     <HeaderComponent />
     <NavbarComponent />
     
-    <main class="content">
-      <router-view></router-view>
+    <main class="d-flex flex-column pt-3 pb-5 mb-5">
+      <div class="container mt-4">
+        <router-view></router-view>
+      </div>
     </main>
 
     <FooterComponent />
@@ -27,16 +29,7 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-bottom: 70px;
-}
-.content {
-  padding: 20px;
-  min-height: calc(100vh - 120px);
+body {
+    padding-bottom: 70px; /* ফুটারের উচ্চতা অনুযায়ী মার্জিন */
 }
 </style>
