@@ -1,20 +1,33 @@
 <template>
   <div class="container my-4">
-    <h1 class="mb-4 text-success">About Us</h1>
-    
-    <div class="row align-items-center">
+    <h1 class="mb-4 text-warning">Contact Us</h1>
+    <div class="row">
       <div class="col-md-6">
-        <p class="lead">
-          We are a dynamic and innovative team, committed to providing the best solutions to customers by combining technology and creativity.
-        </p>
-        <p>
-          We have been working diligently since 2020 and have successfully completed numerous projects. Our goal is to exceed customer expectations.
-        </p>
+        <h3 class="h5">Contact Us</h3>
+        <ul class="list-unstyled">
+          <li><strong>Address:</strong> Dhaka, Bangladesh</li>
+          <li><strong>Email:</strong> info@myapp.com</li>
+          <li><strong>Phone:</strong> +880 XXXX XXX XXX</li>
+        </ul>
       </div>
+      
       <div class="col-md-6">
-        <div class="bg-light p-5 rounded text-center border">
-          
-        </div>
+        <h3 class="h5">Email Us</h3>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-warning">Send</button>
+        </form>
       </div>
     </div>
   </div>
@@ -22,6 +35,6 @@
 
 <script>
 export default {
-  name: 'AboutView',
+  name: 'ContactView',
 };
 </script>
