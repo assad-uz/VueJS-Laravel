@@ -11,12 +11,12 @@ import DashboardPage from '../views/admin/DashboardPage.vue'
 const routes = [
     {
         path: '/', 
-        component: AdminLayout, // <-- ১. রুট পাথে AdminLayout কে লোড করুন 
-        children: [ // <-- ২. কন্টেন্টগুলিকে AdminLayout এর children হিসেবে সেট করুন
+        component: AdminLayout,
+        children: [
             {
-                path: '', //  এটি '/' পাথকেই নির্দেশ করে
+                path: '', 
                 name: 'Dashboard',
-                component: DashboardPage // <-- DashboardPage এখন AdminLayout এর router-view তে লোড হবে
+                component: DashboardPage //
             },
         ]
     },
@@ -24,7 +24,7 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: routes, // <-- সংশোধিত routes অ্যারেটি ব্যবহার করা হলো
+  routes: routes,
 })
 
 export default router;
