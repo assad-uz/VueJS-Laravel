@@ -93,9 +93,9 @@ const packageCounts = ref([
 // ফাংশন এবং কম্পিউটেড প্রপার্টি (Blade লজিক প্রতিস্থাপনের জন্য)
 
 // সংখ্যাকে কমা দিয়ে ফরম্যাট করার জন্য ফাংশন
-const formatNumber = (value) => {
-  return value.toLocaleString('en-IN', { maximumFractionDigits: 0 });
-};
+// const formatNumber = (value) => {
+//   return value.toLocaleString('en-IN', { maximumFractionDigits: 0 });
+// };
 
 // টাকার পরিমাণকে ২ দশমিক স্থান এবং কমা দিয়ে ফরম্যাট করা
 const totalSalesAmountFormatted = computed(() => {
